@@ -326,13 +326,16 @@ body {
 body {
   section {
     .nosotros {
+      height: 15rem;
+      justify-content: center;
+
       .nosotros__titulo {
-        color: #fff;
+        color: #f6821f;
         text-align: center;
         font-family: "Bebas Neue", cursive;
         font-size: 30px;
         line-height: 1.3;
-        margin-top: 5rem;
+        margin-top: 8rem;
       }
       .nosotros__explicacion {
         width: 40rem;
@@ -346,17 +349,129 @@ body {
         padding: 2rem;
       }
     }
-    .nosotros__flex {
-      background-color: rgb(207, 204, 204);
-      width: 100%;
-      margin-top: 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
 
-      .nosotros__container {
-        width: 50%;
-        .nosotros__visionMision {
+    .nosotros__container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(192, 192, 192);
+
+      .nosotros__contCard {
+        width: 60%;
+        height: 9rem;
+        margin: 2rem;
+        .nosotros__vision {
+          color: #111;
+          text-align: center;
+          font-family: "Bebas Neue", cursive;
+          font-size: 25px;
+        }
+        .nosotros__parrafo {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+          color: #111;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+
+      .nosotros__card {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: #f6821f;
+        border-radius: 22px;
+        width: 20%;
+        height: 16rem;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        .nosotros__imagen {
+          width: 60%;
+          height: 160px;
+        }
+        .nosotros__texto {
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          color: #fff;
+          width: 100%;
+          margin: -20px;
+        }
+      }
+    }
+    .nos__container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(192, 192, 192);
+
+      .nos__contCard {
+        width: 60%;
+        height: 9rem;
+        margin-bottom: 3rem;
+
+        .nos__vision {
+          color: #111;
+          text-align: center;
+          font-family: "Bebas Neue", cursive;
+          font-size: 25px;
+          margin-top: 1rem;
+        }
+
+        .nos__parrafo {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+          color: #111;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+      .nos__flex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+        .nos__card {
+          display: flex;
+          flex-wrap: wrap;
+          overflow: hidden;
+          background-color: #f6821f;
+          border-radius: 22px;
+          width: 20%;
+          height: 16rem;
+          text-align: center;
+          justify-content: center;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          .nos__imagen {
+            width: 60%;
+            height: 160px;
+          }
+
+          .nos__texto {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            color: #fff;
+            width: 100%;
+            margin: -20px;
+          }
+        }
+      }
+    }
+
+    /*
+      .nosotros__visionMision {
           width: 30%;
           color: #111;
           text-align: left;
@@ -365,13 +480,53 @@ body {
           margin-top: 1rem;
         }
         .nosotros__parrafo {
-          width: 50%;
+          width: 30%;
           font-size: 16px;
           font-weight: 600;
           text-align: left;
           color: #111;
           font-family: "Poppins", sans-serif;
           margin-bottom: 10rem;
+        }
+      
+      .nosotros__tarjeta {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .nosotros__cardjefe {
+          display: flex;
+          flex-wrap: wrap;
+
+          position: relative;
+          overflow: hidden;
+          background-color: #f6821f;
+          border: 2px solid #f6821f;
+          border-radius: 22px;
+          width: 80%;
+          height: 17rem;
+          transition: 0.3s ease-in-out;
+          text-align: center;
+          justify-content: center;
+          right: 5rem;
+          bottom: 12rem;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          .nosotros__imagenjefe {
+            width: 70%;
+            height: 180px;
+          }
+
+          .nosotros__textojefe {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: -80px;
+            width: 100%;
+          }
         }
       }
       .nosotros__card {
@@ -387,8 +542,8 @@ body {
         transition: 0.3s ease-in-out;
         text-align: center;
         justify-content: center;
-        right: 30rem;
-        bottom: 12rem;
+        margin: 0 1rem;
+        top: 20rem;
 
         &:hover {
           transform: scale(1.05);
@@ -409,111 +564,112 @@ body {
       }
     }
   }
-}
+*/
+    /*CONTACTO*/
 
-/*CONTACTO*/
-
-body {
-  section {
-    .formulario {
-      width: 460px;
-      height: auto;
-      margin: 80px auto;
-      border-radius: 10px;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      background-color: #fbfbfb;
-      padding-left: 30px;
-
-      .formulario__titulo {
-        font-family: "Bebas Neue", cursive;
-        font-size: 39px;
-        text-align: letf;
-        padding-bottom: 20px;
-        color: #f6821f;
-      }
-      .formulario__subtitulo {
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        padding-bottom: 30px;
-        color: #0e0e0e;
-      }
-
-      form {
-        .formulario__texto {
-          font-family: "Poppins", sans-serif;
-          font-size: 14px;
-          color: #0e0e0e;
-
-          &__label {
-            display: block;
-            float: center;
-
-            &__obligatorio {
-              font-family: "Poppins", sans-serif;
-              color: #f6821f;
-            }
-          }
-        }
-
-        input {
-          background-color: #fbfbfb;
-          width: 408px;
-          height: 40px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #f6821f;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px;
-        }
-
-        textarea {
-          background-color: #fbfbfb;
-          width: 405px;
-          height: 150px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #f6821f;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px;
-          padding-top: 15px;
-        }
-
-        .formulario__boton {
-          height: 45px;
-          padding-left: 5px;
-          padding-right: 5px;
-          margin-bottom: 20px;
-          margin-top: 10px;
-          text-transform: uppercase;
-          background-color: #f6821f;
-          border-color: #f6821f;
-          border-style: solid;
+    body {
+      section {
+        .formulario {
+          width: 460px;
+          height: auto;
+          margin: 80px auto;
           border-radius: 10px;
-          width: 420px;
-          cursor: pointer;
-          p {
-            color: #fff;
-          }
-        }
+          padding-top: 30px;
+          padding-bottom: 20px;
+          background-color: #fbfbfb;
+          padding-left: 30px;
 
-        .formulario__aviso {
-          font-family: "Poppins", sans-serif;
-          font-size: 13px;
-          color: #0e0e0e;
-
-          .formulario__obligatorio {
-            font-family: "Poppins", sans-serif;
+          .formulario__titulo {
+            font-family: "Bebas Neue", cursive;
+            font-size: 39px;
+            text-align: letf;
+            padding-bottom: 20px;
             color: #f6821f;
           }
-        }
+          .formulario__subtitulo {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            padding-bottom: 30px;
+            color: #0e0e0e;
+          }
 
-        ::placeholder {
-          font-family: "Poppins", sans-serif;
+          form {
+            .formulario__texto {
+              font-family: "Poppins", sans-serif;
+              font-size: 14px;
+              color: #0e0e0e;
+
+              &__label {
+                display: block;
+                float: center;
+
+                &__obligatorio {
+                  font-family: "Poppins", sans-serif;
+                  color: #f6821f;
+                }
+              }
+            }
+
+            input {
+              background-color: #fbfbfb;
+              width: 408px;
+              height: 40px;
+              border-radius: 5px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #f6821f;
+              margin-top: 10px;
+              padding-left: 10px;
+              margin-bottom: 20px;
+            }
+
+            textarea {
+              background-color: #fbfbfb;
+              width: 405px;
+              height: 150px;
+              border-radius: 5px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #f6821f;
+              margin-top: 10px;
+              padding-left: 10px;
+              margin-bottom: 20px;
+              padding-top: 15px;
+            }
+
+            .formulario__boton {
+              height: 45px;
+              padding-left: 5px;
+              padding-right: 5px;
+              margin-bottom: 20px;
+              margin-top: 10px;
+              text-transform: uppercase;
+              background-color: #f6821f;
+              border-color: #f6821f;
+              border-style: solid;
+              border-radius: 10px;
+              width: 420px;
+              cursor: pointer;
+              p {
+                color: #fff;
+              }
+            }
+
+            .formulario__aviso {
+              font-family: "Poppins", sans-serif;
+              font-size: 13px;
+              color: #0e0e0e;
+
+              .formulario__obligatorio {
+                font-family: "Poppins", sans-serif;
+                color: #f6821f;
+              }
+            }
+
+            ::placeholder {
+              font-family: "Poppins", sans-serif;
+            }
+          }
         }
       }
     }
