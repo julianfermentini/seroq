@@ -388,6 +388,7 @@ body {
         justify-content: center;
         margin-bottom: 2rem;
         transition: 0.3s ease-in-out;
+        padding-top: 10px;
         &:hover {
           transform: scale(1.05);
         }
@@ -450,6 +451,7 @@ body {
           text-align: center;
           justify-content: center;
           transition: 0.3s ease-in-out;
+          padding-top: 10px;
           &:hover {
             transform: scale(1.05);
           }
@@ -469,207 +471,112 @@ body {
         }
       }
     }
-
-    /*
-      .nosotros__visionMision {
-          width: 30%;
-          color: #111;
-          text-align: left;
-          font-family: "Bebas Neue", cursive;
-          font-size: 25px;
-          margin-top: 1rem;
-        }
-        .nosotros__parrafo {
-          width: 30%;
-          font-size: 16px;
-          font-weight: 600;
-          text-align: left;
-          color: #111;
-          font-family: "Poppins", sans-serif;
-          margin-bottom: 10rem;
-        }
-      
-      .nosotros__tarjeta {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        .nosotros__cardjefe {
-          display: flex;
-          flex-wrap: wrap;
-
-          position: relative;
-          overflow: hidden;
-          background-color: #f6821f;
-          border: 2px solid #f6821f;
-          border-radius: 22px;
-          width: 80%;
-          height: 17rem;
-          transition: 0.3s ease-in-out;
-          text-align: center;
-          justify-content: center;
-          right: 5rem;
-          bottom: 12rem;
-
-          &:hover {
-            transform: scale(1.05);
-          }
-
-          .nosotros__imagenjefe {
-            width: 70%;
-            height: 180px;
-          }
-
-          .nosotros__textojefe {
-            font-family: "Poppins", sans-serif;
-            font-size: 16px;
-            color: #fff;
-            margin-bottom: -80px;
-            width: 100%;
-          }
-        }
-      }
-      .nosotros__card {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        background-color: #f6821f;
-        border: 2px solid #f6821f;
-        border-radius: 22px;
-        width: 20%;
-        height: 17rem;
-        transition: 0.3s ease-in-out;
-        text-align: center;
-        justify-content: center;
-        margin: 0 1rem;
-        top: 20rem;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-
-        .nosotros__imagen {
-          width: 70%;
-          height: 180px;
-        }
-
-        .nosotros__texto {
-          font-family: "Poppins", sans-serif;
-          font-size: 16px;
-          color: #fff;
-          margin-bottom: -80px;
-          width: 100%;
-        }
-      }
-    }
   }
-*/
-    /*CONTACTO*/
+}
 
-    body {
-      section {
-        .formulario {
-          width: 460px;
-          height: auto;
-          margin: 80px auto;
-          border-radius: 10px;
-          padding-top: 30px;
-          padding-bottom: 20px;
+/*CONTACTO*/
+
+body {
+  section {
+    .formulario {
+      width: 460px;
+      height: auto;
+      margin: 80px auto;
+      border-radius: 10px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      background-color: #fbfbfb;
+      padding-left: 30px;
+
+      .formulario__titulo {
+        font-family: "Bebas Neue", cursive;
+        font-size: 39px;
+        text-align: letf;
+        padding-bottom: 20px;
+        color: #f6821f;
+      }
+      .formulario__subtitulo {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        padding-bottom: 30px;
+        color: #0e0e0e;
+      }
+
+      form {
+        .formulario__texto {
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+          color: #0e0e0e;
+
+          &__label {
+            display: block;
+            float: center;
+
+            &__obligatorio {
+              font-family: "Poppins", sans-serif;
+              color: #f6821f;
+            }
+          }
+        }
+
+        input {
           background-color: #fbfbfb;
-          padding-left: 30px;
+          width: 408px;
+          height: 40px;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #f6821f;
+          margin-top: 10px;
+          padding-left: 10px;
+          margin-bottom: 20px;
+        }
 
-          .formulario__titulo {
-            font-family: "Bebas Neue", cursive;
-            font-size: 39px;
-            text-align: letf;
-            padding-bottom: 20px;
+        textarea {
+          background-color: #fbfbfb;
+          width: 405px;
+          height: 150px;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #f6821f;
+          margin-top: 10px;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          padding-top: 15px;
+        }
+
+        .formulario__boton {
+          height: 45px;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          text-transform: uppercase;
+          background-color: #f6821f;
+          border-color: #f6821f;
+          border-style: solid;
+          border-radius: 10px;
+          width: 420px;
+          cursor: pointer;
+          p {
+            color: #fff;
+          }
+        }
+
+        .formulario__aviso {
+          font-family: "Poppins", sans-serif;
+          font-size: 13px;
+          color: #0e0e0e;
+
+          .formulario__obligatorio {
+            font-family: "Poppins", sans-serif;
             color: #f6821f;
           }
-          .formulario__subtitulo {
-            font-family: "Poppins", sans-serif;
-            font-size: 16px;
-            padding-bottom: 30px;
-            color: #0e0e0e;
-          }
+        }
 
-          form {
-            .formulario__texto {
-              font-family: "Poppins", sans-serif;
-              font-size: 14px;
-              color: #0e0e0e;
-
-              &__label {
-                display: block;
-                float: center;
-
-                &__obligatorio {
-                  font-family: "Poppins", sans-serif;
-                  color: #f6821f;
-                }
-              }
-            }
-
-            input {
-              background-color: #fbfbfb;
-              width: 408px;
-              height: 40px;
-              border-radius: 5px;
-              border-style: solid;
-              border-width: 1px;
-              border-color: #f6821f;
-              margin-top: 10px;
-              padding-left: 10px;
-              margin-bottom: 20px;
-            }
-
-            textarea {
-              background-color: #fbfbfb;
-              width: 405px;
-              height: 150px;
-              border-radius: 5px;
-              border-style: solid;
-              border-width: 1px;
-              border-color: #f6821f;
-              margin-top: 10px;
-              padding-left: 10px;
-              margin-bottom: 20px;
-              padding-top: 15px;
-            }
-
-            .formulario__boton {
-              height: 45px;
-              padding-left: 5px;
-              padding-right: 5px;
-              margin-bottom: 20px;
-              margin-top: 10px;
-              text-transform: uppercase;
-              background-color: #f6821f;
-              border-color: #f6821f;
-              border-style: solid;
-              border-radius: 10px;
-              width: 420px;
-              cursor: pointer;
-              p {
-                color: #fff;
-              }
-            }
-
-            .formulario__aviso {
-              font-family: "Poppins", sans-serif;
-              font-size: 13px;
-              color: #0e0e0e;
-
-              .formulario__obligatorio {
-                font-family: "Poppins", sans-serif;
-                color: #f6821f;
-              }
-            }
-
-            ::placeholder {
-              font-family: "Poppins", sans-serif;
-            }
-          }
+        ::placeholder {
+          font-family: "Poppins", sans-serif;
         }
       }
     }
