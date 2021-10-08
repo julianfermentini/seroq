@@ -101,11 +101,11 @@ body {
       font-size: 2rem;
       line-height: 1.3;
       text-align: center; }
-    body section .seccion .seccion__contcard {
+    body section .seccion .seccion__contCard {
       width: 100%;
       display: flex;
       justify-content: space-around; }
-      body section .seccion .seccion__contcard .seccion__card {
+      body section .seccion .seccion__contCard .seccion__card {
         width: 12rem;
         height: 15rem;
         background-color: #f6821f;
@@ -116,19 +116,19 @@ body {
         text-align: center;
         justify-content: space-around;
         transition: 0.3s ease-in-out; }
-        body section .seccion .seccion__contcard .seccion__card:hover {
+        body section .seccion .seccion__contCard .seccion__card:hover {
           transform: scale(1.1); }
-        body section .seccion .seccion__contcard .seccion__card .seccion__imgs {
+        body section .seccion .seccion__contCard .seccion__card .seccion__imgs {
           width: 40%;
           margin-bottom: 1rem;
           align-items: center; }
-        body section .seccion .seccion__contcard .seccion__card .seccion__tarjetas {
+        body section .seccion .seccion__contCard .seccion__card .seccion__tarjetas {
           color: #ffffff;
           font-family: "Poppins", sans-serif;
           font-weight: 500;
           font-size: 20px;
           text-align: center; }
-        body section .seccion .seccion__contcard .seccion__card .seccion__parrafo {
+        body section .seccion .seccion__contCard .seccion__card .seccion__parrafo {
           color: #ffffff;
           font-family: "Poppins", sans-serif;
           font-size: 12px;
@@ -225,13 +225,79 @@ body a .whatsapp {
   right: 1rem; }
 
 /*CLIENTES*/
+body .clientes__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  body .clientes__container .clientes__imagen {
+    width: 40%;
+    overflow: hidden;
+    height: 25rem;
+    justify-content: space-between; }
+    body .clientes__container .clientes__imagen img {
+      width: 100%; }
+  body .clientes__container .clientes__texto {
+    flex-wrap: wrap;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    body .clientes__container .clientes__texto .clientes__titulo {
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px;
+      color: #fff;
+      width: 100%;
+      margin-top: 8rem; }
+    body .clientes__container .clientes__texto .clientes__subtitulo {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      width: 100%; }
+
+body .clientes__containerDos {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around; }
+  body .clientes__containerDos .clientes__textoDos {
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    body .clientes__containerDos .clientes__textoDos .clientes__tituloDos {
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px;
+      color: black;
+      width: 100%;
+      margin-top: 8rem; }
+    body .clientes__containerDos .clientes__textoDos .clientes__subtituloDos {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: black;
+      width: 100%; }
+  body .clientes__containerDos .clientes__imagen {
+    width: 40%;
+    height: 25rem;
+    overflow: hidden; }
+    body .clientes__containerDos .clientes__imagen img {
+      width: 100%; }
+
+body .clientes__sub {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem; }
+
 body .clientes {
   display: flex;
   align-items: center;
   height: 25rem;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  body .clientes .clientes__container img {
+  justify-content: space-around;
+  background-color: #fff; }
+  body .clientes .flex__clientes img {
     width: 15rem;
     justify-content: space-around; }
 
@@ -247,7 +313,7 @@ body section .nosotros {
     line-height: 1.3;
     margin-top: 8rem; }
   body section .nosotros .nosotros__explicacion {
-    width: 40rem;
+    width: 60%;
     font-size: 16px;
     text-align: center;
     align-items: center;
@@ -433,3 +499,117 @@ body section .formulario {
       color: #f6821f; }
   body section .formulario form ::placeholder {
     font-family: "Poppins", sans-serif; }
+
+@media screen and (max-width: 1024px) {
+  body .main .main__container .main__text .main__titulo {
+    font-size: 4rem; }
+  body .main .main__container .main__text .main__subtitulo {
+    font-size: 1rem; }
+    body .main .main__container .main__text .main__subtitulo .main__boton {
+      font-size: 1rem; }
+  body .main .main__container .main__imagen {
+    width: 30%;
+    top: 10rem; }
+  body section .seccion {
+    height: 25rem; }
+    body section .seccion .seccion__contCard .seccion__card {
+      margin-bottom: 5rem; } }
+
+@media screen and (max-width: 768px) {
+  body .main .main__container .main__text {
+    margin-top: 2rem; }
+    body .main .main__container .main__text .main__titulo {
+      font-size: 2rem; }
+    body .main .main__container .main__text .main__subtitulo {
+      font-size: 1rem; }
+      body .main .main__container .main__text .main__subtitulo .main__boton {
+        font-size: 1rem; }
+  body .main .main__container .main__imagen {
+    width: 30%;
+    top: 6rem;
+    left: 4rem; }
+  body .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px; }
+  body .clientes__container .clientes__imagen {
+    margin-top: 5rem; }
+  body .clientes__container .clientes__texto .clientes__titulo {
+    margin-top: 7rem; }
+  body .clientes__containerDos .clientes__textoDos .clientes__tituloDos {
+    margin-top: 6rem; }
+  body .clientes__containerDos .clientes__imagen {
+    margin-top: 4.5rem; }
+  body .clientes__sub {
+    margin-top: 0rem; }
+  body .clientes {
+    height: 15rem;
+    justify-content: space-around; }
+    body .clientes .flex__clientes img {
+      width: 10rem; }
+  body section .nosotros__container .nosotros__card {
+    height: 15rem; }
+    body section .nosotros__container .nosotros__card .nosotros__imagen {
+      width: 90%; }
+    body section .nosotros__container .nosotros__card .nosotros__texto {
+      font-size: 13px; }
+  body section .nos__container .nos__flex .nos__card {
+    height: 15rem; }
+    body section .nos__container .nos__flex .nos__card .nos__imagen {
+      width: 90%; }
+    body section .nos__container .nos__flex .nos__card .nos__texto {
+      font-size: 13px; } }
+
+@media screen and (max-width: 600px) {
+  .navbar__nav .navbar__item .navbar__list {
+    font-size: 14px; }
+  body .main {
+    height: 60vh; }
+    body .main .main__container .main__text {
+      width: 60%; }
+      body .main .main__container .main__text .main__titulo {
+        font-size: 2rem; }
+      body .main .main__container .main__text .main__subtitulo {
+        font-size: 12px; }
+        body .main .main__container .main__text .main__subtitulo .main__boton {
+          font-size: 12px; }
+      body .main .main__container .main__text a .botones {
+        font-size: 12px; }
+    body .main .main__container .main__imagen {
+      left: 2rem;
+      top: 10rem; }
+  body section .seccion {
+    height: 65rem; }
+    body section .seccion .seccion__contCard {
+      flex-direction: column;
+      align-items: center; }
+      body section .seccion .seccion__contCard .seccion__card {
+        margin-bottom: 5rem;
+        margin: 10px; }
+  body .clientes__container .clientes__imagen {
+    margin-top: 5rem; }
+  body .clientes__container .clientes__texto .clientes__titulo {
+    margin-top: 5rem; }
+  body .clientes__containerDos .clientes__textoDos .clientes__tituloDos {
+    margin-top: 5rem; }
+  body .clientes__containerDos .clientes__imagen {
+    margin-top: 0rem; }
+  body section .nosotros__container .nosotros__card {
+    height: 14rem;
+    width: 30%;
+    margin-top: 2rem; }
+    body section .nosotros__container .nosotros__card .nosotros__imagen {
+      width: 90%; }
+    body section .nosotros__container .nosotros__card .nosotros__texto {
+      font-size: 13px; }
+  body section .nos__container .nos__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body section .nos__container .nos__flex .nos__card {
+      height: 14rem;
+      width: 30%;
+      margin-top: 2rem; }
+      body section .nos__container .nos__flex .nos__card .nos__imagen {
+        width: 90%; }
+      body section .nos__container .nos__flex .nos__card .nos__texto {
+        font-size: 13px; } }
